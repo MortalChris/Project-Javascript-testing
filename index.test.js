@@ -1,17 +1,14 @@
 const index = require("./index");
 
-
 //capitalize
 test("Take a string and returns it capitalized", () =>{
     expect(index.capitalize("hello")).toBe("Hello");
 });
 
-
 //reverseString
 test("Take a string a return it reversed", () =>{
     expect(index.reverseString("hello")).toBe("olleh");
 })
-
 
 //Calculations
 test("Take 2 numbers adn return sum", () =>{
