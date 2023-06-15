@@ -31,13 +31,19 @@ const calculator = {
 
 
 function caesarCipher(string, shiftFactor){
-    const plain = "abcdefghijklmnopqrstuvwxyz";
-    for(let i = 0; i <= shiftFactor; i++){
-        const cipher = plain;
-        const firstLetterCipher = cipher.charAt(0); //a
-        const seperateCipher = cipher.slice(0); //bcdefghi...
-        const newCipher = seperateCipher + firstLetterCipher; //bcdefghi...xyza
+    for(let i = 0; i <= string.length; i++){
+        string.split("");
     }
-
+    const alphabet = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
+    const cipher = e(letterNum) = (letterNum + shiftFactor);
+    // const plain = "abcdefghijklmnopqrstuvwxyz";
+    // for(let i = 0; i <= shiftFactor; i++){
+    //     const cipher = plain;
+    //     const firstLetterCipher = cipher.charAt(0); //a
+    //     const seperateCipher = cipher.slice(0); //bcdefghi...
+    //     const newCipher = seperateCipher + firstLetterCipher; //bcdefghi...xyza
+    //     return newCipher;
+    // }
+    
 }
 module.exports = {capitalize: capitalize, reverseString: reverseString, calculator: calculator, caesarCipher: caesarCipher};
