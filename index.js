@@ -43,6 +43,7 @@ function caesarCipher(string,shift){//
     return stringify;
 };
 
+
 function analyzeArray(array){
     const object = {//Simplifeid
         average: array.reduce((a, b) => a + b) / array.length,
