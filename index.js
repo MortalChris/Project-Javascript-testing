@@ -42,4 +42,14 @@ function caesarCipher(string,shift){//
     }
     return stringify;
 };
-module.exports = {capitalize: capitalize, reverseString: reverseString, calculator: calculator, caesarCipher: caesarCipher};
+
+function analyzeArray(array){
+
+    const object = {
+        factory(average, min, max, length) {
+            return{average, min, max, length};
+        }
+    };
+    return object;
+}
+module.exports = {capitalize: capitalize, reverseString: reverseString, calculator: calculator, caesarCipher: caesarCipher, analyzeArray: analyzeArray};

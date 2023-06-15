@@ -27,3 +27,8 @@ test("Take 2 numbers adn return sum", () =>{
 test("Take a string and shifts it by certain amount",() =>{
     expect(index.caesarCipher("hello",1)).toBe("ifmmp");
 })
+
+let array = [1,2,3,4,5];
+test("Takes an array of numbers and returns an object with the following properties: average, min, max, and length.", ()=>{
+    expect(index.analyzeArray(array)).toMatchObject({average: 4, min: 1, max: 8, length: 6});
+})
