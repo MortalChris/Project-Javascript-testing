@@ -25,5 +25,5 @@ test("Take 2 numbers adn return sum", () =>{
 
 
 test("Take a string and shifts it by certain amount",() =>{
-    expect(index.caesarCipher("hello",1)).toBe(jgnnq);
+    expect(index.caesarCipher("hello",1)).toBe("ifmmp");
 })
