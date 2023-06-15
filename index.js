@@ -44,7 +44,14 @@ function caesarCipher(string,shift){//
 };
 
 function analyzeArray(array){
-    // const max = Math.max.apply(Math, array);
+    const object = {//Simplifeid
+        average: array.reduce((a, b) => a + b) / array.length,
+        min: Math.min.apply(Math, array),
+        max: Math.max.apply(Math, array),
+        length: array.length
+    }
+    return object;
+    // const max = Math.max.apply(Math, array);                             <-------------Original
     // const min = Math.min.apply(Math, array);
     // const arrayLength = array.length;
     // const average = array.reduce((a, b) => a + b) / array.length;
@@ -57,14 +64,5 @@ function analyzeArray(array){
     
     // const analyzed = object.factory(average, min, max, arrayLength );
     // return analyzed;
-
-    
-    const object = {
-        average: array.reduce((a, b) => a + b) / array.length,
-        min: Math.min.apply(Math, array),
-        max: Math.max.apply(Math, array),
-        length: array.length
-    }
-    return object;
 }
 module.exports = {capitalize: capitalize, reverseString: reverseString, calculator: calculator, caesarCipher: caesarCipher, analyzeArray: analyzeArray};
