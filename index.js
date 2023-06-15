@@ -44,12 +44,17 @@ function caesarCipher(string,shift){//
 };
 
 function analyzeArray(array){
+    const max = Math.max.apply(Math, array);
+    const min = Math.min.apply(Math, array);
+    const arrayLength = array.length;
+    const average = array.reduce((a, b) => a + b) / array.length;
 
     const object = {
         factory(average, min, max, length) {
             return{average, min, max, length};
         }
     };
-    return object;
+    const analyzed = object.factory(average, min, max, arrayLength );
+    return analyzed;
 }
 module.exports = {capitalize: capitalize, reverseString: reverseString, calculator: calculator, caesarCipher: caesarCipher, analyzeArray: analyzeArray};

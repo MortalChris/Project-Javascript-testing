@@ -30,5 +30,5 @@ test("Take a string and shifts it by certain amount",() =>{
 
 let array = [1,2,3,4,5];
 test("Takes an array of numbers and returns an object with the following properties: average, min, max, and length.", ()=>{
-    expect(index.analyzeArray(array)).toMatchObject({average: 4, min: 1, max: 8, length: 6});
+    expect(index.analyzeArray(array)).toMatchObject({average: 3, min: 1, max: 5, length: 5});
 })
